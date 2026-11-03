@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "Brenda Andrade",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/brendaandrade09/GameHUB/issues"
   },
