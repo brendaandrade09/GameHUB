@@ -1,0 +1,22 @@
+info:
+  name: post_jogos
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/jogos/
+  body:
+    type: json
+    data: |-
+      {
+        "titulo":"snake",
+        "ano_lancamento":2001,
+        "estudio_id":1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: put_jogadores
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/jogadores/3
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Suelen",
+        "email": "susu@gmail.com",
+        "nickname": "suee_gamerpro"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
