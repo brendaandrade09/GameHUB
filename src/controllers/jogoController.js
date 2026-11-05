@@ -38,7 +38,7 @@ export function criar(req, res, next) {
 };
 
 export function atualizar(req, res, next) {
-    const { nome, pais } = req.body ?? {};
+    const { titulo, ano_lancamento, estudio_id } = req.body ?? {};
     if (!textoValido(titulo, 150) || !inteiroPositivo(ano_lancamento)
             || ano_lancamento > 9999 || !inteiroPositivo(estudio_id)) {
             return res.status(400).json({
